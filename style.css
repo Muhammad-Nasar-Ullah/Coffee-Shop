@@ -75,7 +75,7 @@
 
 .navbar {
     width: 100%;
-    height: 72px;
+    height: 70px;
     align-content: center;
 }
 
@@ -107,12 +107,13 @@
 .nav-links ul {
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 3vw;
 }
 
 .nav-links ul a {
     text-decoration: none;
     color: black;
+    font-size: 1.1vmax;
 }
 
 .nav-most-right-cont {
@@ -129,6 +130,17 @@
     gap: 16px;
 }
 
+.nav-most-right ul img {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    width: 2vw;
+    height: 2vw;
+}
+
+.nav-most-right ul li:last-child {
+    display: none;
+}
 
 /* ----------------------------- Navbar --------------------------- */
 
@@ -137,8 +149,9 @@
 
 .main-hero {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     align-content: center;
+    margin-bottom: 6vw;
 }
 
 .hero-cont {
@@ -212,11 +225,12 @@
 /* ----------------------------- Social Proof --------------------------- */
 
 .social-proof {
-    height: 274px;
-    width: 100%;
+    width: auto;
     display: flex;
     justify-content: center;
     align-content: center;
+    margin: 80px;
+    overflow: hidden;
 }
 
 .social-proof-cont {
@@ -228,8 +242,8 @@
 }
 
 .social-proof-txt {
-    height: 114px;
-    width: 214px;
+    height: max-content;
+    width: max-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -237,7 +251,6 @@
 }
 
 .social-proof-cont h1 {
-    font-family: inter;
     font-size: 60px;
     font-weight: 400;
 } 
@@ -245,7 +258,7 @@
 .social-proof-cont p {
     font-family: PlayFairDisplay;
     font-size: 24px;
-
+    width: max-content;
 } 
 
 hr {
@@ -258,14 +271,12 @@ hr {
 
 /* ----------------------------- Our Products --------------------------- */
 
-#product-section {
-    padding: 80px;
-}
 
 .main-product-cont {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 80px;
 }
 
 .product-cont {
@@ -306,13 +317,14 @@ hr {
 
 .product-card-cont {
     display: flex;
+    justify-content: center;
     gap: 24px;
-    width: 85%;
     align-self: center;
+    flex-wrap: wrap;
 }
 
 .cards {
-    width: 302px;
+    width: 300px;
 }
 
 .card-1img-cont {
@@ -522,7 +534,7 @@ hr {
 
 
 .testimonial-cont {
-    padding: 80px;
+    padding: 10vw 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -536,7 +548,6 @@ hr {
 }
 
 .test-cards {
-    padding: 40px;
     width: fit-content;
     display: flex;
     flex-direction: column;
@@ -781,6 +792,7 @@ footer {
 
 .right-bottom-input input{
     border: none;
+    outline: none;
     background-color: transparent;
     color: gray;
     font-size: 14px;
@@ -790,4 +802,782 @@ footer {
     padding: 12px 40px;
     margin: 0 12px;
     border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------Media Querry---------------------------- */
+
+@media (max-width: 600px) {
+
+.main-btn{
+    width: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3vw;
+    margin-top: 4vw;
+    padding: 2vw 6vw;
+    border: none;
+    border-radius: 0 6vw 0 6vw;
+    background-color: var(--mainclr);
+    align-self: center;
+}
+
+.main-btn p {
+    color: white;
+    font-size: 3vw;
+    font-family: PlayFairDisplay;
+}
+
+.main-btn img {
+    height: 4vw;
+    width: 4vw;
+}
+
+.section-name{
+    width: fit-content;
+    font-size: 5vw;
+    opacity: 56%;
+    font-weight: 400;
+}
+
+.section-heading{
+    font-size: 7vw;
+    font-family: FairPlayDispaly;
+    font-weight: 400;
+}
+
+.section-txt-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* -------------------------------- navbar ---------------------------- */
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    align-content: center;
+}
+
+.navbar-cont {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.logo-cont {
+
+}
+
+.logo {
+    height: 20px;
+}
+
+.nav-link-cont {
+    display: none;
+
+}
+
+.nav-links {
+
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 3vw;
+}
+
+.nav-links ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1vmax;
+}
+
+.nav-most-right-cont {
+
+}
+
+.nav-most-right {
+    
+}
+
+.nav-most-right ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+.nav-most-right ul img {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    width: 5vw;
+    height: 5vw;
+}
+
+.nav-most-right ul li:last-child {
+    display: initial;
+}
+
+/* -------------------------------- navbar ---------------------------- */
+
+
+/* -------------------------------- Hero ---------------------------- */
+
+.main-hero {
+    width: 100%;
+    min-height: 100vh;
+    align-content: center;
+}
+
+.hero-cont {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt-cont {
+    width: 100%;
+}
+
+.txt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.txt-head {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.txt-head h1 {
+    width: fit-content;
+    font-family: PlayFairDisplay;
+    font-weight: 500 ;
+    font-size: 9vw;
+
+}
+
+.txt-cont p {
+    font-size: 2.5vw;
+    line-height: 3vw;
+
+}
+
+.hero-imgs {
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    
+}
+
+.hero-imgs img {
+    width: 40vw;
+    height: 32vh;
+}
+
+.hide {
+    display: none;
+}
+
+.first-desg {
+    border-radius: 0 10vw 0 10vw;
+}
+
+.second-desg {
+    border-radius: 10vw 0 10vw 0;
+}
+
+/* -------------------------------- Hero ---------------------------- */
+
+
+/* ----------------------------- Social Proof --------------------------- */
+
+.social-proof {
+    width: 100%;
+    margin: auto;
+}
+
+hr {
+    display: none;
+}
+
+.social-proof-cont {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.social-proof-txt {
+    width: 30vw;
+}
+
+.social-proof-txt h1 {
+    font-size: 8vw;
+}
+
+.social-proof-txt p {
+    font-size: 3vw;
+}
+
+/* ----------------------------- Social Proof --------------------------- */
+
+/* ----------------------------- Our Products --------------------------- */
+
+
+.main-product-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.product-type-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.product-type-cont ul {
+    list-style: none;
+    width: 80%;
+    padding: 3vw 7vw;
+    border-radius: 10vw;
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+.product-type-cont ul li{
+    padding: 3vw 6vw;
+}
+
+.latte {
+    background-color: white;
+    border-radius: 10vw;
+}
+
+.product-type-cont ul a {
+    text-decoration: none;
+    color: black;
+    opacity: 50%;
+}
+
+.product-card-cont {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+.cards {
+    width: 300px;
+}
+
+.card-1img-cont {
+    width: 100%;
+    height: 250px;
+    background-image: url(images/1-product.jpg);
+    background-position: 50% 10%;
+    background-size: 145%;
+    border-radius: 0 50px 0 50px;
+
+}
+
+.card-2img-cont {
+    width: 100%;
+    height: 250px;
+    background-image: url(images/2-product.jpg);
+    background-position: 50% 52%;
+    background-size: 106%;
+    border-radius: 0 50px 0 50px;
+
+}
+
+.card-3img-cont {
+    width: 100%;
+    height: 250px;
+    background-image: url(images/3-product.jpg);
+    background-position: 58% 66%;
+    background-size: 105%;
+    border-radius: 0 50px 0 50px;
+
+}
+
+.card-4img-cont {
+    width: 100%;
+    height: 250px;
+    background-image: url(images/4-product.jpg);
+    background-position: 50% 50%;
+    background-size: 114%;
+    border-radius: 0 50px 0 50px;
+
+}
+
+.lower-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+}
+
+.lower-card h2 {
+    font-size: 24px;
+    font-family: PlusJakarta;
+    font-weight: 600;
+}
+
+.card-review {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-review div {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.card-review div p {
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 70%;
+}
+
+.card-review p {
+    opacity: 50%;
+}
+
+.review {
+    opacity: 50%;
+    font-size: 16px;
+}
+
+.card-star {
+    height: 20px;
+    width: 20px;
+}
+
+.card-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-price p {
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 60%;
+}
+
+.card-price button {
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--mainclr);
+}
+
+.card-price button p {
+    font-size: 30px;
+    font-weight: 200;
+    color: white;
+    opacity: 100%;
+}
+
+.little-circles {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 4px ;
+}
+
+.fc {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: var(--mainclr);
+}
+
+.sc {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: lightgray;
+}
+
+.section-breaker {
+    height: 1px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ----------------------------- Our Products --------------------------- */
+
+/* ----------------------------- About us --------------------------- */
+
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-us-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 80px;
+}
+
+.about-txt-cont {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+.about-txt-cont button{
+    align-self: flex-start;
+}
+
+.about-img-cont {  
+    height: 40vh; 
+    width: 90vw;
+    gap: 16px;
+    position: relative;
+}
+
+.fir {
+    border-radius: 0 80px 0 80px;
+    height: 90%;
+    width: 47%;
+
+}
+
+.sec {
+    border-radius: 80px 0 80px 0;
+    height: 90%;
+    width: 47%;
+}
+
+/* ----------------------------- About us --------------------------- */
+
+/* ----------------------------- Testimonial --------------------------- */
+
+
+.testimonial-cont {
+    margin: 35vw 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-card-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 8vw;
+    align-self: center;
+}
+
+.test-cards {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+}
+
+.test-cards p {
+    letter-spacing: 1px;
+    word-spacing: 6px;
+}
+
+
+.test-first-half {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.rev-name-star-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.rev-name-star-cont p {
+    font-weight: 600 ;
+}
+
+/* ----------------------------- Testimonial --------------------------- */
+
+/* ----------------------------- Blog --------------------------- */
+
+.main-blog-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-img1-cont {
+    background-image: url(images/blog1.svg);
+    width: 384px;
+    height: 320px;
+}
+
+.blog-img2-cont {
+    background-image: url(images/blog2.svg);
+    width: 384px;
+    height: 320px;
+}
+
+.blog-img3-cont {
+    background-image: url(images/blog3.svg);
+    width: 384px;
+    height: 320px;
+}
+
+.blog-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.blog-card-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-self: center;
+}
+
+.blog-cards {
+    width: 380px;
+    padding: 16px;
+    border: 2px solid lightgrey;
+    border-radius: 0 100px 0 40px;
+}
+
+.blog-initial {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-initial div {
+    display: flex;
+    gap: 10px;
+}
+
+.blog-initial p {
+    font-size: 15px;
+}
+
+.blog-initial img {
+    height: 14px;
+    width: 14px;
+}
+
+.blog-txt {
+    font-family: PlusJakarta;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.view-more{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.view-more div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.view-more a {
+    text-decoration: none;
+    color: black;
+}
+
+.view-more img {
+    height: 10px;
+    width: 5px;
+}
+
+/* ----------------------------- Blog --------------------------- */
+
+/* ----------------------------- Footer --------------------------- */
+
+footer {
+    display: none;
+    justify-content: space-between;
+    background-color: var(--footer);
+    padding: 80px;
+    gap: 80px;
+    width: auto;
+}
+
+.left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 32px;
+}
+
+.left p {
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo p {
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 60%;
+}
+
+.right-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-nav-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.right-nav-cont a{
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+}
+
+.right-top-nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 16px;
+}
+
+.right-top-nav-last {
+    display: flex;
+    list-style: none;
+    gap: 6px;
+}
+
+.right-top-nav-last img {
+    height: 40px;
+    width: 40px;
+}
+
+.right-top-head {
+    color: white;
+    font-family: PlayFairDisplay;
+    font-weight: 100;
+}
+
+.right-bottom-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.right-bottom-head {
+    color: white;
+    font-family: PlayFairDisplay;
+    font-weight: 100;
+}
+
+.right-bottom-input-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--footer-input);
+    border-radius: 30px;
+}
+
+.right-bottom-input {
+    padding: 17px 24px;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.right-bottom-input input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: gray;
+    font-size: 14px;
+}
+
+.footer-search-btn {
+    padding: 12px 40px;
+    margin: 0 12px;
+    border-radius: 30px;
+}
+
+/* ----------------------------- Footer --------------------------- */
+
+
+    
 }
